@@ -25,9 +25,9 @@ const Product = () => {
   };
   return (
     <div>
-      <AdComponent adClient={adClient} adSlot={adSlot} />
+      {/* <AdComponent adClient={adClient} adSlot={adSlot} /> */}
       <div className="flex  py-4    lg:px-36">
-        <form onSubmit={search} className="flex space-x-4">
+        <form onSubmit={search} className="flex space-x-4 my-16">
           <input
             type="text"
             value={query}
