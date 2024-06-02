@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import ReactGA from "react-ga";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-ReactGA.initialize("G-PGWQEK69NK"); // Replace with your actual tracking ID
+ReactGA.initialize("G-JWDX20BJKX"); // Replace with your actual tracking ID
 root.render(
   <React.StrictMode>
     <BrowserRouter>

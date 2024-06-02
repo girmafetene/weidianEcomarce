@@ -3,7 +3,7 @@
 import ReactGA from "react-ga";
 
 export const initGA = () => {
-  ReactGA.initialize("G-PGWQEK69NK"); // Replace with your actual tracking ID
+  ReactGA.initialize("G-JWDX20BJKX"); // Replace with your actual tracking ID
 };
 
 export const logPageView = () => {
