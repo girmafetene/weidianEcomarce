@@ -12,12 +12,21 @@ const MegaMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="fixed flex justify-center bg-white shadow items-center w-full px-2 h-[55px] z-50">
-      <img
-        src={logo}
-        alt="logo"
-        className="flex w-12 mr-2 text-start justify-start"
-      />
+    <header className="fixed flex justify-between bg-white shadow items-center w-full px-2 h-[55px] z-50">
+      <div>
+        <a
+          className="text-xs font-semibold cursor-pointer px-28 flex items-start text-start justify-start"
+          href="/Product"
+          target="_blank"
+        >
+          <img
+            src={logo}
+            alt="logo"
+            className="flex w-12 mr-2 text-start justify-start"
+          />
+        </a>
+      </div>
+
       <div className="hidden md:block">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
