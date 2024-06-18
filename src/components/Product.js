@@ -23,6 +23,21 @@ const Product = () => {
       console.error("Error fetching data: ", error);
     }
   };
+
+  const buList = [
+    {
+      id: 1,
+      name: "Weidian Store",
+    },
+    {
+      id: 2,
+      name: "Kaza Store",
+    },
+  ];
+  const [selected, setSelected] = useState(0);
+  const onClick = (item) => {
+    setSelected(item);
+  };
   return (
     <div>
       {/* <AdComponent adClient={adClient} adSlot={adSlot} /> */}
@@ -43,7 +58,21 @@ const Product = () => {
           </button>
         </form>
       </div>
-
+      <div className="flex space-x-4">
+        {buList.map((items, i) => (
+          <div
+            key={i}
+            className={
+              selected === i
+                ? `bg-gray-100 px-4 py-1 rounded-full shadow cursor-pointer`
+                : `px-4 py-1 rounded-full shadow cursor-pointer`
+            }
+            onClick={() => onClick(i)}
+          >
+            {items.name}
+          </div>
+        ))}
+      </div>
       <div class="font-[sans-serif] bg-gray-100">
         <div class="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
